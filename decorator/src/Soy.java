@@ -2,6 +2,7 @@ import interfaces.Beverage;
 import interfaces.CondimentDecorator;
 
 public class Soy extends CondimentDecorator {
+
     private Beverage beverage;
 
     public Soy(Beverage beverage) {
@@ -17,4 +18,5 @@ public class Soy extends CondimentDecorator {
     public double getCost() {
         return 0.1 + beverage.getCost();
     }
+    
 }

@@ -2,6 +2,7 @@ import interfaces.Beverage;
 import interfaces.CondimentDecorator;
 
 public class Mocha extends CondimentDecorator {
+
     private Beverage beverage;
 
     public Mocha(Beverage beverage) {
@@ -17,4 +18,5 @@ public class Mocha extends CondimentDecorator {
     public double getCost() {
         return 0.2 + beverage.getCost();
     }
+
 }
